@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ME</title>
+    <style>
+        /* 1. 背景與整體佈局 */
+        body {
+            /* 這裡可以換成你喜歡的背景顏色或漸層 */
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            margin: 0;
+            padding: 40px 20px;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* 2. 個人頭像區塊 */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            max-width: 300px;
+            line-height: 1.5;
+        }
+
+        /* 3. 連結容器 */
+        .links-container {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* 4. 仿 Lit.link 的毛玻璃按鈕 */
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1); /* 半透明白色 */
+            backdrop-filter: blur(10px); /* 模糊背景 (毛玻璃感) */
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 30px; /* 圓角膠囊型 */
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* 5. 社群小圖示區 (如果有需要可以放一行) */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            opacity: 0.7;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .social-icons a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-header">
+        <!-- 記得換成你的頭像網址 -->
+        <img src="你的圖片網址" alt="Ryan" class="avatar">
+        <div class="name">Ryan</div>
+        <div class="bio">目前在學、電繪、烘焙與節奏遊戲愛好者</div>
+    </div>
+
+    <div class="links-container">
+        <!-- 你可以根據需要增減連結 -->
+        <a href="https://instagram.com/..." class="link-card" target="_blank">Instagram</a>
+        <a href="https://discord.com/..." class="link-card" target="_blank">Discord Server</a>
+        <a href="你的其他連結" class="link-card" target="_blank">Portfolio / 插畫作品</a>
+        <a href="https://..." class="link-card" target="_blank">Project Sekai ID</a>
+    </div>
+
+</body>
+</html>
